@@ -1,0 +1,16 @@
+/* CSS style */
+
+body{
+	text-align: center;
+	font-family: Arial;
+	font-size: small;
+}
+
+#website{
+	background-color: white;
+	
+}
+
+a:hover{
+	color: red;
+}
