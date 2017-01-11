@@ -1,0 +1,93 @@
+/* CSS style */
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman;
+}
+
+img{
+	width: 100%;
+	height: 200px;
+}
+
+h1{
+	height: 60px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 60px;
+}
+
+@keyframes title {
+	0%  {background-color: #EF7126; color: #F9E559;}
+	25%  {background-color: #6F3662; color: #FFFFFF;}
+	50%  {background-color: #9F6164; color: #F8DEBD;}
+	75%  {background-color: #44B3C2; color: #FFFFFF;}
+	100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1 {
+	animation: title 5s ease infinite;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.box1{
+	float: left;
+	width: 33.33333%;
+}
+
+.box2{
+	float: left;
+	width: 33.33333%;
+}
+
+/*Hover effect: Zoom in*/
+.box1 figure img{
+	transition: .3s ease-in-out;
+}
+.box1 figure:hover img{
+	transform: scale(1.1);
+	opacity: .5;
+}
+
+/* Opacity #2 */
+.box2 figure img {
+	transition: .3s ease-in-out;
+}
+.box2 figure:hover img {
+	transform: translate(10px, 0);
+	box-shadow: 10px 0px 0px 0px #f5f5f5;
+}
+
+#bottom{
+	width: 100%;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	background-color: #f7f7f7;
+	font-weight: bold;
+}
+
+p{
+	position: absolute;
+	width: 200px;
+	margin: 0;
+	animation: p 8s ease;
+}
+
+@keyframes p{
+	0%  {left: 46%; opacity: 1}
+	20% {left: 45%; opacity: 1}
+	30% {left: 45%; opacity: 1}
+	100% {left:  10%; opacity: 0}
+}
+
+	
