@@ -1,0 +1,148 @@
+<!-- /* Xay dung giao dien web ban hang */ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>FASTFOOD_Banh mi</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="website">
+		
+		<div id="top">
+			<div id="top-left">
+				<ul>
+					<li><a href="#"><img src="images/google.png"></a></li>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/yahoo.png"></a></li>
+					<li><a href="#"><img src="images/zing.png"></a></li>
+				</ul>
+			</div>
+			<div id="top-right">
+				<ul>
+					<li><img src="images/login.png"></li>
+					<li>|</li>
+					<li><a href="#">Đăng nhập</li>
+					<li>|</li>
+					<li><a href="#">Đăng ký</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="header">
+			<div style="float:left; width:250px; height:54px">
+				<a href="#"><img src="images/logo.jpg"></a>
+			</div>
+			
+			<div style="float:right; width:400px; height:60px">
+				<div id="header-phone">
+					HOTLINE 19001991
+				</div>
+				<div id="search-box">
+					<form id="search-form">
+						<input type="text" placeholder="Search for here..." id="textsearch">
+						<button type="submit" id="search-button"></button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="menu">
+			<ul>
+				<img src="images/home.png">
+				<li style="border-left: 1px dotted #bdc3c7"><a href="index.html">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Thực đơn</a>
+					<ul class="submenu">
+						<li><a href="cafe.html">Cafe</a></li>
+						<li><a href="sinhto.html">Sinh tố</a></li>
+						<li><a href="trasua.html">Trà sữa</a></li>
+						<li><a href="fastfood.html">Đồ ăn nhanh</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+
+		<div id="ads">
+			<div id="ads-left">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li><img src="images/ads1.png" /></li>
+							<li><img src="images/ads2.jpg" /></li>
+							<li><img src="images/ads3.jpg" /></li>
+							<li><img src="images/ads4.jpg" /></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!-- jQuery -->
+			<script
+				  src="https://code.jquery.com/jquery-2.2.4.js"
+				  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+				  crossorigin="anonymous"></script>
+			<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+			<!-- FlexSlider -->
+			<script defer src="jquery.flexslider.js"></script>
+
+			<script type="text/javascript">
+				$(function(){
+					SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+					$('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: false,
+					});
+				});
+			</script>
+
+			<div id="ads-right">
+				<img src="images/off2.jpg">
+			</div>
+
+		</div>
+
+		<div class="clr"></div>
+
+		<div>
+			<div id="main">
+				<div class="box">
+					<figure><img src="images/menu/cakes4.jpg" title="Bánh mì kẹp thịt" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px;"><strong>Bánh mì</strong> là một loại thực phẩm mà bạn có thể dễ dàng kết hợp với nhiều món ăn đa dạng và là một món ăn sáng gọn nhẹ, lý tưởng. Đây là một món ăn nhanh gọn, tiện lợi, chế biến nhanh, không tốn nhiều thời gian của bạn đâu nhưng vẫn đầy đủ dinh dưỡng nhé các bạn, vô cùng thích hợp cho bữa sáng hoặc những chuyến picnic đi xa. Thịt thơm ngon, đậm đà hòa quyện trong vị chua chua của dưa thêm chút ngầy ngậy của nước sốt và vị tương ớt cay cay, tạo nên một hương vị đặc biệt ăn hòai mà không thấy chán. Vậy thì còn chờ gì nữa, hãy cùng đến MEET&EAT cho bữa sáng tuyệt vời của cả gia đình bạn nhé!</p>
+				</div>
+				<div class="box">
+					<figure><img src="images/menu/cakes5.jpg" title="Bánh thịt xiên" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px;"><strong>Bánh mì</strong> là một loại thực phẩm mà bạn có thể dễ dàng kết hợp với nhiều món ăn đa dạng và là một món ăn sáng gọn nhẹ, lý tưởng. Đây là một món ăn nhanh gọn, tiện lợi, chế biến nhanh, không tốn nhiều thời gian của bạn đâu nhưng vẫn đầy đủ dinh dưỡng nhé các bạn, vô cùng thích hợp cho bữa sáng hoặc những chuyến picnic đi xa. Thịt thơm ngon, đậm đà hòa quyện trong vị chua chua của dưa thêm chút ngầy ngậy của nước sốt và vị tương ớt cay cay, tạo nên một hương vị đặc biệt ăn hòai mà không thấy chán. Vậy thì còn chờ gì nữa, hãy cùng đến MEET&EAT cho bữa sáng tuyệt vời của cả gia đình bạn nhé!</p>
+				</div>
+				<div class="box">
+					<figure><img src="images/menu/cakes6.jpg" title="Bánh mì ruốc" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px;"><strong>Bánh mì</strong> là một loại thực phẩm mà bạn có thể dễ dàng kết hợp với nhiều món ăn đa dạng và là một món ăn sáng gọn nhẹ, lý tưởng. Đây là một món ăn nhanh gọn, tiện lợi, chế biến nhanh, không tốn nhiều thời gian của bạn đâu nhưng vẫn đầy đủ dinh dưỡng nhé các bạn, vô cùng thích hợp cho bữa sáng hoặc những chuyến picnic đi xa. Thịt thơm ngon, đậm đà hòa quyện trong vị chua chua của dưa thêm chút ngầy ngậy của nước sốt và vị tương ớt cay cay, tạo nên một hương vị đặc biệt ăn hòai mà không thấy chán. Vậy thì còn chờ gì nữa, hãy cùng đến MEET&EAT cho bữa sáng tuyệt vời của cả gia đình bạn nhé!</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="bottom">
+			<ul>
+				<li style="font-weight: bold;">MEET&EAT</li>
+				<li>|</li>
+				<li>Địa chỉ: Toà nhà StarCity, 81 Lê Văn Lương, Thanh Xuân, Hà Nội</li>
+				<li>|</li>
+				<li>Email: customerservice@mee&teat.com.vn</li>
+			</ul>
+		</div>
+
+		<div id="backtop">
+			<a href="#"><img src="images/top.png" title="Back To Top"></a>
+		</div>
+
+	</div>
+
+</body>

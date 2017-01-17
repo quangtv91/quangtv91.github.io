@@ -1,0 +1,157 @@
+<!-- /* Xay dung giao dien web ban hang */ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>SINH TO_Hoa qua</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="website">
+		
+		<div id="top">
+			<div id="top-left">
+				<ul>
+					<li><a href="#"><img src="images/google.png"></a></li>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/yahoo.png"></a></li>
+					<li><a href="#"><img src="images/zing.png"></a></li>
+				</ul>
+			</div>
+			<div id="top-right">
+				<ul>
+					<li><img src="images/login.png"></li>
+					<li>|</li>
+					<li><a href="#">Đăng nhập</li>
+					<li>|</li>
+					<li><a href="#">Đăng ký</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="header">
+			<div style="float:left; width:250px; height:54px">
+				<a href="#"><img src="images/logo.jpg"></a>
+			</div>
+			
+			<div style="float:right; width:400px; height:60px">
+				<div id="header-phone">
+					HOTLINE 19001991
+				</div>
+				<div id="search-box">
+					<form id="search-form">
+						<input type="text" placeholder="Search for here..." id="textsearch">
+						<button type="submit" id="search-button"></button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="menu">
+			<ul>
+				<img src="images/home.png">
+				<li style="border-left: 1px dotted #bdc3c7"><a href="index.html">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Thực đơn</a>
+					<ul class="submenu">
+						<li><a href="cafe.html">Cafe</a></li>
+						<li><a href="sinhto.html">Sinh tố</a></li>
+						<li><a href="trasua.html">Trà sữa</a></li>
+						<li><a href="fastfood.html">Đồ ăn nhanh</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+
+		<div id="ads">
+			<div id="ads-left">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li><img src="images/ads1.png" /></li>
+							<li><img src="images/ads2.jpg" /></li>
+							<li><img src="images/ads3.jpg" /></li>
+							<li><img src="images/ads4.jpg" /></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!-- jQuery -->
+			<script
+				  src="https://code.jquery.com/jquery-2.2.4.js"
+				  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+				  crossorigin="anonymous"></script>
+			<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+			<!-- FlexSlider -->
+			<script defer src="jquery.flexslider.js"></script>
+
+			<script type="text/javascript">
+				$(function(){
+					SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+					$('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: false,
+					});
+				});
+			</script>
+
+			<div id="ads-right">
+				<img src="images/off2.jpg">
+			</div>
+
+		</div>
+
+		<div class="clr"></div>
+
+		<div>
+			<div id="main">
+				<div class="box">	
+					<figure><img src="images/menu/sinhto3.jpg" title="Sinh tố dâu" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px"><strong>Sinh tố dâu tây – giải nhiệt và thanh lọc cơ thể</strong>
+						<br></br>
+						Sinh tố dâu tây là loại đồ uống giải khát rất tốt trong mùa hè. Dâu tây có rất nhiều lợi ích đối với sức khỏe của mỗi người như tăng cường hệ miễn dịch, bảo vệ mắt, chống ung thư, kiểm soát cân nặng,… Uống một cốc sinh tố dâu tây mỗi ngày sẽ giúp bạn có được một hệ miễn dịch tốt, giúp bạn có được một cơ thể cân đối và giúp làn da trở nên đẹp hơn đấy!
+					</p>
+				</div>
+				<div class="box">	
+					<figure><img src="images/menu/sinhto1.jpg" title="Sinh tố bơ" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px"><strong>Sinh tố bơ sữa thơm ngon bổ dưỡng</strong>
+					<br></br>
+					Mùa hè nóng nực, một ly sinh tố bơ không chỉ giúp giải khát mà còn cung cấp nhiều khoáng chất cần thiết cho cơ thể như kali, canxi, vitamin C và K, a-xít folic, đồng, natri và chất xơ. Bơ có tác dụng tăng khả năng hấp thụ carotenoid của cơ thể, chất giúp cải thiện sức khỏe con người. Đây còn là nguồn phong phú chất chống ô-xy hóa.
+					</p>
+				</div>
+				<div class="box">	
+					<figure><img src="images/menu/sinhto2.jpg" title="Sinh tố xoài" alt="Meet&Eat"></figure>
+					<p style="text-align: center; padding-top: 10px"><strong>Sinh tố xoài sữa tươi bổ dưỡng</strong>
+						<br></br>
+						Món sinh tố này rất giàu vitamin A, C, B1, B2, B6, kali, magiê, phốt pho và lượng chất sắt cần thiết cho cơ thể. Ly sinh tố xoài có vị thơm ngọt của xoài và vị béo của sữa, khi ăn rất dễ chịu và hấp dẫn. 		
+					</div>
+
+				</div>
+			</div>
+
+			<div id="bottom">
+				<ul>
+					<li style="font-weight: bold;">MEET&EAT</li>
+					<li>|</li>
+					<li>Địa chỉ: Toà nhà StarCity, 81 Lê Văn Lương, Thanh Xuân, Hà Nội</li>
+					<li>|</li>
+					<li>Email: customerservice@mee&teat.com.vn</li>
+				</ul>
+			</div>
+
+			<div id="backtop">
+				<a href="#"><img src="images/top.png" title="Back To Top"></a>
+			</div>
+
+		</div>
+
+	</body>
