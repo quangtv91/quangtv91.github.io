@@ -1,0 +1,247 @@
+/* CSS style */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial;
+	font-size: small;
+	background-color: #f5f5f5;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.clr{
+	clear: both;
+}
+
+img{
+	border: 0;
+}
+
+#website{
+	width: 1040px;
+	margin: auto;
+	background-color: white;
+}
+
+#top{
+	width: 100%;
+	margin: auto;
+	height: 36px;
+	background-image: url(images/bg-top.png);
+}
+
+#top-left{
+	float: left;
+}
+
+#top-left ul{
+	padding: 10px 0px 0px 19px;
+}
+
+#top-left ul li{
+	float: left;
+	margin-right: 8px;	
+}
+
+#top-right{
+	float: right;
+}
+
+#top-right ul{
+	padding: 10px 19px 0px 0px;
+}
+
+#top-right ul li{
+	float: left;
+	margin-left: 8px;
+	color: #bdc3c7; 
+}
+
+#top-right ul li a:hover{
+	color: red; 	
+}
+
+#header{
+	width: 1000px;
+	margin: auto;
+	height: 90px;
+}
+
+#header-phone{
+	width: 170px;
+	height: 31px;
+	float: left;
+	margin-top: 35px;
+	background: url(images/call2.png) no-repeat;
+	padding-left: 26px;
+	line-height: 31px;
+	font-weight: bold;
+}
+
+#search-box{
+	width: 204px;
+	height: 31px;
+	float: left;
+	margin-top: 35px;
+	position: relative; /* Co dinh search-box */
+	background: #ecf0f1;
+}
+
+#textsearch{
+	height: 31px;
+	width: 160px;
+	border: 0;
+	background: #ecf0f1;
+}
+
+#search-button{
+	height: 30px;
+	width: 34px;
+	position: absolute; z-index:99; top: 0; right: 0; /*search-button nam tren search-box */
+	border: 0;
+	background: #ecf0f1;
+	background: url(images/button.png) no-repeat;
+	cursor: pointer;
+}
+
+#menu{
+	height: 42px;
+	width: 1040px;
+	margin: 15px auto;
+	background: #088da5;
+	line-height: 42px;
+}
+
+#menu ul li{
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+#menu ul li a{
+	width: 120px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+
+#menu img{
+	float: left;
+	padding: 5px 10px 5px 10px;	
+}
+
+#menu ul li a:hover{
+	color: black;
+	background-color: #e6e6fa;	
+}
+
+#menu ul li >.submenu{
+	display: none; /* An submenu */
+	position:absolute; z-index:90; /*Hien submenu tren li da co dinh */
+	background: #66cccc;
+}
+
+#menu ul li >.submenu li{
+	border-bottom: 1px dashed black;
+}
+
+#menu ul li:hover .submenu{
+	display:block; /* Hien submenu khi hover */
+}
+
+#ads{
+	width: 1000px;
+	margin: 20px auto;
+}
+
+#ads-left{
+	width: 646px;
+	height: 345px;
+	float: left;
+}
+
+#ads-right{
+	width: 350px;
+	height: 345px;
+	float: left;
+}
+
+#ads-right img{
+	width: 100%;
+	height: 344px;
+	padding-left: 10px;
+	animation: img 6s ease-in-out infinite;
+}
+
+@keyframes img{
+	0%  {opacity: 0}
+	20% {opacity: 1}
+	70% {opacity: 0}
+	100% {opacity: 1}
+}
+
+#main{
+	width: 1000px;
+	height: 830px;
+	margin: 10px auto;
+}
+
+.box{
+	float: left;
+	width: 31.33333%;
+	padding: 3px;
+	margin: 3px;
+}
+.box figure{
+	overflow: hidden;
+	margin: 0;
+	padding: 3px;
+}
+/*Hover effect: Zoom in*/
+.box figure img{
+	height: 250px;
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.box figure:hover img{
+	transform: scale(1.2);
+}
+
+#bottom{
+	height: 40px;
+	width: 100%;
+	float: left;
+	line-height: 40px;
+	font-style: italic;
+	text-align: center;
+	background-color: #0e2f44;
+	color: #f5f5f5;
+}
+
+#bottom ul li{
+	float: left;
+	padding-right: 5px;
+	padding-left: 50px;
+}
+
+#backtop{
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+}
+
+#backtop img{
+	height: 50px;
+	width: 50px;
+}
