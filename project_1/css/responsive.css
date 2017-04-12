@@ -1,0 +1,621 @@
+/* lg */
+@media (min-width: 1200px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        -webkit-animation: fadeInUp 400ms;
+        animation: fadeInUp 400ms;
+    }
+
+    .about p {
+        line-height: 1.5;
+        margin: 15px 100px 0 100px;
+        text-align: justify;
+    }
+
+    .width-img-100 {
+        max-width: 100%;
+        height: 380px;
+        margin-top: 20px;
+    }
+
+    .post-preview .user .avatar {
+        width: 8%;
+    }
+
+    .width-img-101 {
+        max-width: 100%;
+        height: 450px;
+    }
+
+    .news .post-preview {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .infomation {
+        margin: 30px 100px 50px;
+
+    }
+
+    hr {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .vanhoa-list1 {
+        /*padding-bottom: 50px;*/
+        margin: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .share {
+        text-align: right;
+        margin-right: 100px;
+    }
+
+    .img-responsive {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 360px;
+    }
+
+    .pager .next a {
+        margin-right: 100px;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #ddd;
+        /*margin-right: 320px;*/
+    }
+
+    .car-list .row {
+        margin-left: 120px;
+        margin-right: 0;
+    }
+
+    #portfolio .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        -webkit-animation: fadeInUp 400ms;
+        animation: fadeInUp 400ms;
+    }
+
+    .about p {
+        line-height: 1.5;
+        margin: 15px 100px 0 100px;
+        text-align: justify;
+    }
+
+    .width-img-100 {
+        max-width: 100%;
+        height: 380px;
+        margin-top: 20px;
+    }
+
+    .navbar-nav > li {
+        margin-left: 10px;
+    }
+
+    .navbar-collapse {
+        padding-left: 0;
+        /*padding-right: 80px;*/
+    }
+
+    .post-preview .user .avatar {
+        width: 13%;
+    }
+
+    .width-img-101 {
+        max-width: 100%;
+        height: 450px;
+    }
+
+    .news .post-preview {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .infomation {
+        margin: 30px 50px 50px;
+
+    }
+
+    hr {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .vanhoa-list1 {
+        /*padding-bottom: 50px;*/
+        margin: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .share {
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .img-responsive {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 360px;
+    }
+
+    .pager .next a {
+        margin-right: 100px;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #ddd;
+        /*margin-right: 320px;*/
+    }
+
+    .car-list .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .recent-work-wrap .recent-work-inner h3 a {
+        font-size: 20px;
+    }
+
+    .recent-work-wrap .overlay {
+        padding: 15px;
+    }
+
+    .services-wrap {
+        padding: 40px 10px 40px 30px;
+    }
+
+    .feature-wrap h2,
+    .single-services h2 {
+        font-size: 18px;
+    }
+
+    .feature-wrap h3,
+    .single-services h3 {
+        font-size: 14px;
+    }
+
+    .tab-wrap .media .parrent.pull-left {
+        clear: both;
+        width: 100%;
+    }
+
+    .tab-wrap .media .parrent.media-body {
+        clear: both;
+    }
+
+    #portfolio .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .recent-work-wrap .overlay .preview {
+        line-height: inherit;
+    }
+
+    .team-bar .first-arrow {
+        width: 21%;
+    }
+
+    .team-bar .second-arrow {
+        width: 20%;
+    }
+
+    .team-bar .third-arrow {
+        width: 21%;
+    }
+
+    .team-bar .fourth-arrow {
+        width: 20%;
+    }
+
+    ul.social_icons li {
+        margin-right: 0;
+    }
+
+}
+
+@media (width: 1024px) {
+    .video-wrap video {
+        visibility: visible;
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1351px;
+        height: auto;
+    }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        -webkit-animation: fadeInUp 400ms;
+        animation: fadeInUp 400ms;
+    }
+
+    .about p {
+        line-height: 1.5;
+        margin: 15px 50px 15px 50px;
+        text-align: justify;
+    }
+
+    .width-img-100 {
+        max-width: 100%;
+        height: 300px;
+        /*margin-top: 20px;*/
+    }
+
+    .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-nav > li {
+        margin-left: 0;
+    }
+
+    .post-preview .user .avatar {
+        width: 15%;
+    }
+
+    .width-img-101 {
+        /*max-width: 100%;*/
+        /*height: 450px;*/
+    }
+
+    .news .post-preview {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .infomation {
+        margin: 30px 50px 50px;
+
+    }
+
+    hr {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .vanhoa-list1 {
+        /*padding-bottom: 50px;*/
+        margin: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .share {
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .padding91 {
+        text-align: center;
+    }
+
+    .img-responsive {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .pager .next a {
+        margin-right: 100px;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #ddd;
+        /*margin-right: 320px;*/
+    }
+
+    .car-list .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #main-slider .carousel h1 {
+        font-size: 25px;
+    }
+
+    #main-slider .carousel h2 {
+        font-size: 20px;
+    }
+
+    .tab-wrap .media .parrent.pull-left,
+    .media.accordion-inner .pull-left {
+        clear: both;
+        width: 100%;
+    }
+
+    .tab-wrap .media .parrent.media-body,
+    .media.accordion-inner .media-body {
+        clear: both;
+    }
+
+    .services-wrap {
+        padding: 40px 0 40px 30px;
+    }
+
+    .recent-work-wrap .overlay {
+        padding: 15px;
+    }
+
+    .recent-work-wrap .recent-work-inner h3 a {
+        font-size: 20px;
+    }
+
+    .sinlge-skill {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sinlge-skill p em {
+        font-size: 25px;
+    }
+
+    .sinlge-skill p {
+        font-size: 16px;
+    }
+
+    .team-bar .first-one-arrow {
+        width: 2%;
+    }
+
+    .team-bar .first-arrow {
+        width: 18%;
+    }
+
+    .team-bar .second-arrow {
+        width: 24%;
+    }
+
+    .team-bar .third-arrow {
+        width: 15%;
+    }
+
+    .team-bar .fourth-arrow {
+        width: 20%;
+    }
+
+    .blog .blog-item .entry-meta > span a {
+        font-size: 10px;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+    .container > .navbar-header, .container > .navbar-collapse {
+        margin-left: 0;
+    }
+
+    .about p {
+        line-height: 1.5;
+        margin: 15px 15px 15px 15px;
+        text-align: justify;
+    }
+
+    .width-img-100 {
+        max-width: 100%;
+        /*height: 300px;*/
+        /*margin-top: 20px;*/
+    }
+
+    .top-number {
+        font-size: 14px;
+    }
+
+    input.search-form:hover {
+        width: 120px;
+    }
+
+    .navbar-nav > li {
+        padding-bottom: 0;
+    }
+
+    .post-preview .user .avatar {
+        width: 15%;
+    }
+
+    .width-img-101 {
+        max-width: 100%;
+        /*height: 450px;*/
+    }
+
+    .news .post-preview {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .infomation {
+        margin: 15px 15px 15px;
+
+    }
+
+    hr {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .vanhoa-list1 {
+        /*padding-bottom: 50px;*/
+        margin: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .share {
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 15px;
+    }
+
+    .padding91 {
+        text-align: center;
+    }
+
+    .img-responsive {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        /*height: 280px;*/
+    }
+
+    .img-responsive1 {
+        /*margin-top: 20px;*/
+        /*margin-bottom: 30px;*/
+        max-width: 100%;
+        /*height: 450px;*/
+    }
+
+    .car-list .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pager .next a {
+        margin-right: 0;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #ddd;
+        /*margin-right: 320px;*/
+        margin-top: 20px;
+    }
+
+    /*FOOTER*/
+    #site-footer-links > .wrapper > .footList {
+        display: inline-block;
+        margin: 12px 0;
+        padding: 0 16px 0 12px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #site-footer-links > .wrapper > .footList .footList-child > p {
+        margin: 0;
+    }
+
+    #site-footer-links > .wrapper > .footList ul {
+        display: inline-block;
+    }
+
+    #main-slider .carousel h1 {
+        font-size: 25px;
+    }
+
+    #main-slider .carousel h2 {
+        font-size: 16px;
+    }
+
+    .feature-wrap h2,
+    .single-services h2 {
+        font-size: 18px;
+    }
+
+    .feature-wrap h3,
+    .single-services h3 {
+        font-size: 14px;
+    }
+
+    .media.accordion-inner .pull-left,
+    .media.accordion-inner .media-body {
+        clear: both;
+    }
+
+    .accordion-inner h4 {
+        margin-top: 10px;
+    }
+
+    .tab-wrap .media .pull-left {
+        clear: both;
+        width: 100%;
+    }
+
+    .tab-wrap .media .media-body {
+        clear: both;
+    }
+
+    .nav-tabs > li.active > a:after {
+        display: none;
+    }
+
+    #footer .col-sm-6 {
+        text-align: center;
+    }
+
+    #footer .pull-right {
+        float: none !important;
+    }
+
+    .sinlge-skill {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .team .single-profile-top,
+    .team .single-profile-bottom {
+        margin-bottom: 30px;
+    }
+
+    .clients-area {
+        padding: 60px 0;
+    }
+
+    .clients-area h1 {
+        font-size: 25px;
+    }
+
+    .portfolio-item,
+    #recent-works .col-xs-12.col-sm-4.col-md-3 {
+        padding: 0 15px;
+    }
+
+    ul.social_icons li {
+        margin-right: 0;
+    }
+
+    .blog .blog-item .entry-meta {
+        margin-bottom: 20px;
+    }
+
+    .blog .blog-item .blog-content h3 {
+        margin-bottom: 20px;
+    }
+
+    .post_reply_comments {
+        padding-left: 20px;
+    }
+
+}
+
+/* XS Portrait */
+@media (max-width: 480px) {
+
+}
+

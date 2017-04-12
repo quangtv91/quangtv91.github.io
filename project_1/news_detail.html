@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/news_detail_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"><img
+                        src="img/logo1.png" style="width: 160px;" alt="logo"
+                        title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Trang chủ</a></li>
+
+                    <li class="dropdown ">
+                        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">Giới thiệu <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about_dialy.html">Vị trí địa lý</a></li>
+                            <li><a href="about_lehoi.html">Văn hóa - Lễ hội</a></li>
+                            <li><a href="about_dulich.html">Tiềm năng du lịch</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="list_sp.html" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="list_sp.html">Làng nghề <i
+                                        class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="sp_detail.html">Bàn ghế mây tre</a></li>
+                                    <li><a href="#">Khung trang trí mây tre</a></li>
+                                    <li><a href="#">Tranh gốm</a></li>
+                                    <li><a href="#">Lọ hoa gốm nghệ thuật</a></li>
+                                    <li><a href="#">Bánh đa Kế</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="">Đặc sản <i class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="#">Rượu làng Vân</a></li>
+                                    <li><a href="#">Cam Bố Hạ</a></li>
+                                    <li><a href="#">Mỳ Chũ</a></li>
+                                    <!--<li><a href="#">Bánh đa Thổ Hà</a></li>-->
+                                    <li><a href="#">Gà đồi Yên Thế</a></li>
+                                    <li><a href="#">Vải thiều Lục Ngạn</a></li>
+                                    <!--<li><a href="#">Bún Đa Mai</a></li>-->
+                                    <!--<li><a href="#">Chè kho Mỹ Độ</a></li>-->
+                                    <!--<li><a href="#">Xôi trứng kiến</a></li>-->
+                                    <!--<li><a href="#">Cua da</a></li>-->
+                                    <!--<li><a href="#">Bánh đúc Đồng Quan</a></li>-->
+                                    <!--<li><a href="#">Bánh vắt vai</a></li>-->
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="vanhoa.html"
+                           class="dropdown-toggle" data-toggle="dropdown">Văn hóa làng nghề <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_maytredan.html">Mây tre đan Tăng Tiến</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_banhdanem.html">Bánh đa nem Thổ Hà</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Bánh đa Kế</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Mì Chũ</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Rượu Làng Vân</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Gốm Làng Ngòi</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="news.html" class="dropdown-toggle" data-toggle="dropdown">Tin tức <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Làng nghề</a></li>
+                            <li><a href="#">Lễ hội</a></li>
+                            <li><a href="#">Du lịch</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="dichvu.html" class="dropdown-toggle" data-toggle="dropdown">Dịch vụ <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=dichvu.html>Dịch vụ vận tải</a></li>
+                            <!--<li><a href="#">Dịch vụ lữ hành</a></li>-->
+                            <li><a href="dichvu.html">Nhà hàng, khách sạn</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="search pull-right">
+                    <form role="form" method="post" action="#">
+                        <input name="key_search" required="true" type="search" class="search-form" autocomplete="off"
+                               placeholder="Tìm kiếm">
+                        <button type="submit" class="btn btn-default search-button"><i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+<section id="body"></section>
+
+<section class="container-fluid diachi">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Trang chủ <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="news.html">Tin tức <i class="fa fa-angle-right"></i></a></li>
+            <li class="active-breadcrumb">Du lịch</li>
+        </ol>
+    </div>
+</section>
+
+<section class="container-fluid news">
+    <div class="row">
+        <div class="container mieuta">
+            <!--<div class="col-xs-12 col-sm-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+            <div class="post-preview">
+                <div class="user">
+                    <div class="avatar">
+                        <img src="img/mod1.jpg" alt="Mod" title="cuhiep">
+                    </div>
+                    <div class="info">
+                        <h3>cuhiep</h3>
+                        <p>Mod, iOS</p>
+                    </div>
+                </div>
+                <img class="img-responsive" src="img/news1.jpg" alt="">
+            </div>
+
+            <!--<div class="col-xs-12 col-sm-12 col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1">-->
+            <div class="infomation">
+                <h2 style="text-align: left">Về với du lịch làng nghề Bắc Giang</h2>
+                <p>Làng nghề không chỉ góp phần phát triển kinh tế, tạo việc làm cho người dân mà còn là nơi lưu
+                    giữ
+                    nét
+                    văn hóa độc đáo. Nằm trong vùng trung du miền núi Bắc Bộ, Bắc Giang là một trong những cái
+                    nôi
+                    của
+                    nhiều làng nghề thủ công truyền thống. Nếu có hướng đi đúng hướng, làng nghề không những
+                    giải
+                    quyết
+                    việc làm, đem lại thu nhập đáng kể cho người dân mà còn đang mở ra những hướng mới cho phát
+                    triển du
+                    lịch. </p>
+                <p>Thổ Hà là một trong những ngôi làng đẹp nhất, còn giữ được nhiều di tích. Ngôi nhà cổ truyền
+                    thống,
+                    với cảnh quan thơ mộng là con sông chảy dọc qua làng. Đường làng, ngõ xóm được thiết kế hình
+                    bàn
+                    cờ
+                    nối tiếp gắn mạch nhau, khá giống làng cổ Đường Lâm và Cự Đà. Tận sâu trong những con ngõ,
+                    con
+                    hẻm
+                    ấy là một mầu đỏ cũ kỹ của những bức tường gạch, gạch lát nghiêng đã mòn vẹt, trưng ra thần
+                    thái
+                    của
+                    dấu ấn thời gian và đậm chất đồng bằng Bắc Bộ. Làng cổ Thổ Hà có nghề làm bánh đa lưu truyền
+                    nhiều
+                    thế hệ, dù chịu ảnh hưởng của kinh tế thị trường, vẫn còn không ít hộ giữ nghề. Họ muốn níu
+                    giữ
+                    những ký ức tuyệt đẹp về một nghề truyền thống phát đạt suốt nhiều thập kỷ mà cha ông họ dốc
+                    lòng
+                    tạo dựng thương hiệu. Thổ Hà cũng là đất của quan họ. Những làn điệu lúng liếng, với lối
+                    sống
+                    chan
+                    hòa, gắn kết góp phần tôn bồi tính cách nhã nhặn, khiêm tốn và mực thước của người dân. Hơn
+                    nữa
+                    Thổ
+                    Hà có vị trí giáp Bắc Ninh, cửa ngõ của thủ đô Hà Nội mỗi năm thu hút hàng vạn lượt du khách
+                    trong
+                    và ngoài nước đến tham quan, tìm hiểu quy trình sản sản xuất gốm, bánh đa nem, nấu rượu.</p>
+
+                <div class="imagepPost"><img src="img/news1_1.jpg"></div>
+
+                <div class="imagepPost"><img src="img/news1_2.jpg"></div>
+
+                <div class="imagepPost"><img src="img/news1_3.jpg"></div>
+
+                <blockquote style="text-align: justify">Ông <b>Cáp Trọng Việt</b>, Trưởng thôn Thổ Hà cho biết:
+                    “Thôn có
+                    hơn 200 hộ làm bánh đa nem.
+                    Đây là
+                    nghề gia truyền do cha ông để lại. Ngoài ra, Thổ Hà còn lưu giữ những công trình kiến trúc
+                    cổ
+                    kính,
+                    tiêu biểu của cả nước như đình Thổ Hà, chùa Đoan Minh, cảnh quan không gian đậm chất truyền
+                    thống
+                    của làng quê thuần Việt.”
+                </blockquote>
+
+                <blockquote style="text-align: justify">Chị <b>Hoàng Điệp</b>, Phóng viên Báo Tuổi Trẻ TPHCM cho
+                    hay: Tôi
+                    đã đến hai làng nghề này
+                    nhiều
+                    lần và cảm thấy rất ấn tượng bởi hầu như gia đình nào ở đây cũng sản xuất bánh đa nem, nấu
+                    rượu,
+                    sản
+                    phẩm được phơi bày đầy rẫy khắp các ngả đường làng, cùng đó là những công trình kiến trúc cổ
+                    kính,
+                    những nếp nhà gạch chỉ không trát vữa, ngõ nhỏ sâu hút đều tăm tắp, đặc biệt hơn đây còn là
+                    vùng
+                    đất
+                    của những làn điệu dân ca quan họ mượt mà bờ bắc sông Cầu. Và như thế, với chị Điệp đến Thổ
+                    Hà
+                    không
+                    chỉ để tác nghiệp mà còn là dịp được trực tiếp xem người dân làng nghề sản xuất những sản
+                    phẩm
+                    thủ
+                    công truyền thống, tham quan, khám phá, thưởng ngoạn cảnh sắc, không gian văn hóa làng
+                    nghề.”
+                </blockquote>
+
+                <p>Làng nghề mang lại nguồn thu nhập tương đối cao và ổn định đã hút một lượng lớn lao động nông
+                    nghiệp
+                    dôi dư trong quá trình phát triển công nghiệp. Như làng nghề Tăng Tiến, hiện có khoảng 70%
+                    số hộ
+                    (6.000 lao động) làm nghề đan lát; xã Dĩnh Kế có 80% số lao động làm bánh đa, mỳ; làng Vân
+                    gần
+                    100%
+                    số dân biết nấu rượu và bán rượu; làng bún Ða Mai cung cấp khoảng một tấn bún/ngày ra thị
+                    trường;
+                    làng Thủ Dương gần như cả làng đều làm mỳ; hay như vùng Nghĩa Hồ thuộc huyện Lục Ngạn, hình
+                    thành cả
+                    một hợp tác xã nuôi ong mật với cả trăm hộ tham gia... Ông Thân Văn Giang, Bí thư Đảng bộ xã
+                    Tăng
+                    Tiến nói: Những năm gần đây không ít các đoàn khách trong và ngoài nước như: Đức, Anh, Liên
+                    bang
+                    Nga, Mỹ, Trung Quốc, Hà Lan…đến đây tham quan. Du khách tìm hiểu mô hình sản xuất thủ công
+                    truyền
+                    thống, mặt khác họ cũng là những doanh nhân đến tìm kiếm nguồn hàng, vậy nên du lịch của
+                    xã
+                    bước
+                    đầu có những chuyển biến tích cực. </p>
+
+                <div class="imagepPost"><img src="img/news1_4.jpg"></div>
+
+                <p>Để du lịch làng nghề phát triển tương xứng với tiềm năng đó là một chiến lược dài hơi, mà mấu
+                    chốt là
+                    chúng ta cần “thổi hồn” bằng các cơ chế, chính sách của nhà nước và địa phương. Trong đó,
+                    ngoài
+                    việc
+                    đầu tư xây dựng cơ sở vật chất hạ tầng như giao thông, các dịch vụ điểm vui chơi giải trí,
+                    nhà
+                    hàng,
+                    khách sạn thì các địa phương cũng cần xây dựng chương trình, kế hoạch phát triển du lịch
+                    làng
+                    nghề
+                    cụ thể, đồng thời đẩy mạnh công tác tuyên truyền, quảng bá thương hiệu, tạo ra những sản
+                    phẩm
+                    đặc
+                    trưng, phong phú đa dạng về mẫu mã, chủng loại, có thể nghiên cứu cải tiến sản phẩm sao cho
+                    phù
+                    hợp
+                    với việc đóng gói, dễ dàng vận chuyển đi xa. Các địa phương nên tạo sự liên kết hợp tác, kêu
+                    gọi
+                    đầu
+                    tư đối với các doanh nghiệp du lịch; quan tâm bảo tồn, gìn giữ vốn văn hóa truyền thống tại
+                    những
+                    địa phương có làng nghề. Cùng đó cần làm tốt công tác quản lý điểm đến, toàn bộ các quy
+                    trình
+                    kết
+                    nối du lịch, kiểm soát an ninh, vệ sinh môi trường cần đặc biệt được chú trọng... Những giải
+                    pháp
+                    trên được thực hiện đồng bộ thì tương lai không xa du lịch làng nghề Bắc Giang sẽ có những
+                    chuyển
+                    biến rõ rệt./. </p>
+            </div>
+            <div class="share uppercase">
+                <span>Chia sẻ</span>
+                <a href="#">
+                    <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid other">
+    <div class="container padding91">
+        <div class="row">
+            <div class="col-md-12 uppercase">
+                <p>Có thể bạn chưa biết</p>
+            </div>
+            <a href="#">
+                <div class="col-xs-12 col-md-4">
+                    <img src="img/news2_other.jpg">
+                    <h3>Làng nghề truyền thống và tiềm năng du lịch</h3>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="col-xs-12 col-md-4">
+                    <img src="img/news4_other.jpg">
+                    <h3>12 đặc sản danh tiếng của đất Bắc Giang</h3>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="col-xs-12 col-md-4">
+                    <img src="img/news5_other.jpg">
+                    <h3>Sản phẩm" Du lịch làng nghề Bắc Giang"cần được đầu tư, khai thác</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid cmt">
+    <div class="row">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                <p class="uppercase">2 comments</p>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2 col-md-1">
+                        <div class="imgUser">
+                            <img class="img-responsive1 img-circle" src="img/mod2.jpg" style="margin-right: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-10 col-md-11">
+                        <div class="cmtUser">
+                            <h3>sonlazio</h3>
+                            <p>Cổng làng sao mà đẹp thế, nhất định sẽ có ngày về thăm nơi này!</p>
+                            <p>Reply</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-2 col-md-1">
+                        <div class="imgUser">
+                            <img class="img-responsive1 img-circle" src="img/mod3.jpg" style="margin-right: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-10 col-md-11">
+                        <div class="cmtUser">
+                            <h3>Duy Luân</h3>
+                            <p>Giáp làng Thổ hà là làng Vân Hà, cũng là một làng nghề truyền thống với nghề nấu rượu gạo
+                                nổi
+                                tiếng. </p>
+                            <p>Reply</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-2 col-md-1">
+                        <div class="imgUser">
+                            <img class="img-responsive1 img-circle" src="img/mod6.jpg" style="margin-right: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-10 col-md-11">
+                        <div class="cmtUser">
+                            <input type="text" name="" id="" placeholder="Ý kiến của bạn">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="connected uppercase">
+                                <span>Kết nối</span>
+                                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div id="site-footer-social">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13 clearfix">
+        <div>
+            <ul id="site-footer-social-follow" class="clearfix">
+                <li><a rel="nofollow" href="#" class="social icon-instagram" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-twitter" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-facebook" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-youtube" target="_blank"></a></li>
+                <li><a rel="author" href="#" class="social icon-google" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="site-footer-links">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13">
+        <div class="footList firstFootList">
+            <div class="footList-child">
+                <p>Bắc Giang</p>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Gới thiệu</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Làng nghề Bắc Giang</p>
+                <ul>
+                    <li><a href="#">Mây tre đan Tăng Tiến</a></li>
+                    <li><a href="#">Bánh đa nem Thổ Hà</a></li>
+                    <li><a href="#">Bánh đa Kế</a></li>
+                    <li><a href="#">Rượu làng Vân</a></li>
+                    <li><a href="#">Mỳ Chũ</a></li>
+                    <li><a href="#">Gốm làng Ngòi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Top địa điểm</p>
+                <ul>
+                    <li><a href="#">Làng Thổ Hà</a></li>
+                    <li><a href="#">Chùa Vĩnh Nghiêm</a></li>
+                    <li><a href="#">Hồ Cấm Sơn</a></li>
+                    <li><a href="#">Suối Mỡ</a></li>
+                    <li><a href="#">Hồ Khuôn Thần</a></li>
+                    <li><a href="#">Đồng Cao</a></li>
+                    <li><a href="#">Nhà hàng, khách sạn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Đặc sản</p>
+                <ul>
+                    <li><a href="#">Vải thiệu</a></li>
+                    <li><a href="#">Bánh đa</a></li>
+                    <li><a href="#">Cam Bố Hạ</a></li>
+                    <li><a href="#">Gà đồi</a></li>
+                    <li><a href="#">Bún Đa Mai</a></li>
+                    <li><a href="#">Bánh đúc</a></li>
+                    <li><a href="#">Xôi trứng kiến</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footBtm">
+    <p>&copy;
+        <script> document.write(new Date().getFullYear()) </script>
+        Techmaster Vietnam &ndash; All rights reserved.
+    </p>
+    <div id="atol-logo">&nbsp;</div>
+    <div class="digi" data-language="en" id="DigiCertClickID_PQrjblDC">&nbsp;</div>
+</div>
+
+<span id="btn-to-top">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</span>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
+

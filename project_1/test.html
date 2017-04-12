@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/test_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <style>
+        .mn3 {
+            display: none;
+        }
+
+        .mn3 {
+            margin-top: -1px;
+            min-width: 200px;
+            margin-left: 160px;
+            margin-top: -36px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"><img
+                        src="img/logo1.png" style="width: 160px;" alt="logo"
+                        title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+
+                    <li class="dropdown ">
+                        <a href="list_sp.html" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="list_sp.html">Mây tre đan <i
+                                        class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="sp_detail.html">Bàn ghế Cafe - Nhà hàng</a></li>
+                                    <li><a href="#">Ghế mây tre đan</a></li>
+                                    <li><a href="#">Kệ - Tủ mây tre đan</a></li>
+                                    <li><a href="#">Khung trang trí mây tre</a></li>
+                                    <li><a href="#">Đèn trang trí mây tre</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="">Gốm Làng Ngòi <i class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="#">Tranh gốm</a></li>
+                                    <li><a href="#">Tượng gốm sứ</a></li>
+                                    <li><a href="#">Lọ hoa nghệ thuật</a></li>
+                                    <li><a href="#">Đèn vườn</a></li>
+                                    <li><a href="#">Gạch trang trí nội thất</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Rượu Làng Vân <i class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="#">Rượu gạo tẻ</a></li>
+                                    <li><a href="#">Rượu gạo nếp</a></li>
+                                    <li><a href="#">Rượu nếp cái hoa vàng</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Bánh đa nem</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Bánh đa Kế</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Mì Chũ</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="vanhoa.html"
+                           class="dropdown-toggle" data-toggle="dropdown">Làng nghề <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_maytredan.html">Mây tre đan Tăng Tiến</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_banhdanem.html">Bánh đa nem Thổ Hà</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Bánh đa Kế</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Mì Chũ</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Rượu Làng Vân</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Gốm Làng Ngòi</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cho thuê xe <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Xe 4 chỗ</a></li>
+                            <li><a href="#">Xe 7 chỗ</a></li>
+                            <li><a href="#">Xe 16 chỗ</a></li>
+                            <li><a href="#">Xe 29 chỗ</a></li>
+                            <li><a href="#">Xe 35 chỗ</a></li>
+                            <li><a href="#">Xe 45 chỗ</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="search pull-right">
+                    <form role="form" method="post" action="#">
+                        <input name="key_search" required="true" type="search" class="search-form" autocomplete="off"
+                               placeholder="Tìm kiếm">
+                        <button type="submit" class="btn btn-default search-button"><i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+<!--<section id="top-content">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12 text">-->
+                <!--<h1 class="wow fadeInLeftBig the-big-title"><strong>BẮC GIANG</strong></h1>-->
+                <!--<div class="divider-1 wow fadeInUp"><span></span></div>-->
+                <!--<div class=" wow fadeInLeftBig">-->
+                    <!--<h2 class="description">NƠI TINH HOA HỘI TỤ</h2>-->
+                <!--</div>-->
+                <!--<div class="top-big-link wow fadeInUp">-->
+                    <!--<a href="#body" class="btn btn-circle page-scroll">-->
+                        <!--<i class="fa fa-angle-double-down animated"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="video-wrap">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<video autoplay loop preload="metadata">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<source type="video/mp4" src="videos/bg_videos2.mp4"></source>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</video>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>&lt;!&ndash; /#top-content &ndash;&gt;-->
+
+<section id="body"></section>
+
+<section class="container-fluid car">
+    <div class="row">
+        <h2>CHO THUÊ XE</h2>
+        <div class="title">
+            <img src="img/logo.png">
+        </div>
+
+        <div class="container-fluid car-list">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-offset-1">
+                    <div id="car1" class="car-detail wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="car-img">
+                            <img src="img/oto4.jpg">
+                        </div>
+                        <h3>Xe 4 chỗ</h3>
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 4 chỗ</h3>
+                                <p>Giá đầu tuần: 1.000.000</p>
+                                <p>Giá cuối tuần: 1.200.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="car2" class="car-detail wow fadeInDown">
+                        <div class="car-img">
+                            <img src="img/oto7.jpg">
+                        </div>
+                        <h3>Xe 7 chỗ</h3>
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 7 chỗ</h3>
+                                <p>Giá đầu tuần: 1.500.000</p>
+                                <p>Giá cuối tuần: 1.700.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="car3" class="car-detail wow fadeInRight">
+                        <div class="car-img">
+                            <img src="img/oto16.jpg">
+                        </div>
+                        <h3>Xe 16 chỗ</h3>
+
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 16 chỗ</h3>
+                                <p>Giá đầu tuần: 2.100.000</p>
+                                <p>Giá cuối tuần: 2.500.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-offset-1">
+                    <div id="car5" class="car-detail wow slideInLeft">
+                        <div class="car-img">
+                            <img src="img/oto29.jpg">
+                        </div>
+                        <h3>Xe 29 chỗ</h3>
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 29 chỗ</h3>
+                                <p>Giá đầu tuần: 3.000.000</p>
+                                <p>Giá cuối tuần: 3.500.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="car6" class="car-detail wow fadeInRight">
+                        <div class="car-img">
+                            <img src="img/oto35.jpg">
+                        </div>
+                        <h3>Xe 35 chỗ</h3>
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 35 chỗ</h3>
+                                <p>Giá đầu tuần: 3.500.000</p>
+                                <p>Giá cuối tuần: 4.000.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="car" class="car-detail wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="car-img">
+                            <img src="img/oto45.jpg">
+                        </div>
+                        <h3>Xe 45 chỗ</h3>
+                        <a href="">
+                            <div class="overlay">
+                                <h3>Xe 45 chỗ</h3>
+                                <p>Giá đầu tuần: 4.000.000</p>
+                                <p>Giá cuối tuần: 4.500.000</p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span>Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid tab">
+    <h2 style="text-align: center">SẢN PHẨM NỔI BẬT</h2>
+
+    <ul class="nav nav-tabs container">
+        <li class="active"><a data-toggle="tab" href="#home">Làng nghề</a></li>
+        <li><a data-toggle="tab" href="#menu1">Đặc sản</a></li>
+    </ul>
+
+    <!--<ul class="nav nav-pills col-lg-offset-2">-->
+    <!--<li class="active"><a data-toggle="pill" href="#home">Sản phẩm làng nghề</a></li>-->
+    <!--<li><a data-toggle="pill" href="#menu1">Đặc sản</a></li>-->
+    <!--</ul>-->
+
+    <div class="tab-content container">
+        <div id="home" class="tab-pane fade in active">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Bộ bàn ghế</h3>
+                                </a>
+                                <p>Mây tre đan Tăng Tiến</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Khung trang trí</h3>
+                                </a>
+                                <p>Mây tre đan Tăng Tiến</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Đèn trang trí</h3>
+                                </a>
+                                <p>Mây tre đan Tăng Tiến</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Bánh đa</h3>
+                                </a>
+                                <p>Bánh đa Kế</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Bánh đa nem</h3>
+                                </a>
+                                <p>Bánh đa nem Thổ Hà</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo tẻ</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo nếp</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banghe1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Mì</h3>
+                                </a>
+                                <p>Mì Chũ</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu1" class="tab-pane fade">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ds/ruou.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rư</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo tẻ</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo nếp</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/mychu3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Mì</h3>
+                                </a>
+                                <p>Mì Chũ</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banhdanem1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Bánh đa nem</h3>
+                                </a>
+                                <p>Bánh đa nem Thổ Hà</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo tẻ</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo nếp</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/mychu3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Mì</h3>
+                                </a>
+                                <p>Mì Chũ</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/banhdanem1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Bánh đa nem</h3>
+                                </a>
+                                <p>Bánh đa nem Thổ Hà</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou1.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo tẻ</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/ruou3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Rượu gạo nếp</h3>
+                                </a>
+                                <p>Rượu làng Vân</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 special">
+                <div class="wow fadeInDown animated" data-wow-duration="1s" data-wow-delay="0.6s"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="list">
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/mychu3.jpg">
+                                <div class="image-overlay">
+                                    <a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <a href="product-detail.html">
+                                    <h3>Mì</h3>
+                                </a>
+                                <p>Mì Chũ</p>
+                                <span><a href="#"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="container-fluid main-content">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="content-title">
+                    <h2>DỊCH VỤ VẬN TẢI</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto4.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 4 chỗ</h3>
+                                <p>Giá đầu tuần: 1.000.000</p>
+                                <p>Giá cuối tuần: 1.200.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto7.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 7 chỗ</h3>
+                                <p>Giá đầu tuần: 1.500.000</p>
+                                <p>Giá cuối tuần: 1.700.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto16.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 16 chỗ</h3>
+                                <p>Giá đầu tuần: 2.100.000</p>
+                                <p>Giá cuối tuần: 2.500.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto29.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 29 chỗ</h3>
+                                <p>Giá đầu tuần: 3.000.000</p>
+                                <p>Giá cuối tuần: 3.500.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto35.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 35 chỗ</h3>
+                                <p>Giá đầu tuần: 3.500.000</p>
+                                <p>Giá cuối tuần: 4.000.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/oto45.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Xe 45 chỗ</h3>
+                                <p>Giá đầu tuần: 4.000.000</p>
+                                <p>Giá cuối tuần: 4.500.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="content-title">
+                    <h2>NHÀ HÀNG, KHÁCH SẠN</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/nhahang1.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Nhà hàng Đồng Quê</h3>
+                                <p><i class="fa fa-map-marker"></i> Address: Km 120 Quốc lộ 1A, Song Khê, Tp Bắc Giang
+                                </p>
+                                <p><i class="fa fa-phone"></i> Phone: (0240) 3.456.789</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/nhahang2.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Nhà hàng Cây Đa</h3>
+                                <p><i class="fa fa-map-marker"></i> Address: Số 14 Ngõ 4, Nguyễn Đình Chiểu, Hai Bà
+                                    Trưng,
+                                    Hà Nội
+                                </p>
+                                <p><i class="fa fa-mobile"></i> Mobile: 090.220.9011</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <a href="course-detail.html">
+                        <div class="content-detail">
+                            <div class="content-img">
+                                <img src="img/nhahang3.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"
+                                     title="Lập trình Web Java Spring" style="height: 250px;">
+                            </div>
+                            <div class="content-description">
+                                <h3 class="">Nhà hàng Rùa Vàng</h3>
+                                <p><i class="fa fa-map-marker"></i> Address: Địa chỉ: Số 01 Hùng Vương - TP.Bắc Giang
+                                </p>
+                                <p><i class="fa fa-phone"></i> Phone: (0240) 3.456.789</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="content-title">
+                    <h2>CHỦ ĐỀ NỔI BẬT</h2>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 chude-list">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="chude1" class="chude-detail">
+                                <a href="vanhoa_detail_maytredan.html">
+                                    <div class="chude-img">
+                                        <img src="img/news_1.jpg">
+                                    </div>
+                                    <div class="overlay">
+                                        <h3>Phát huy vai trò của di tích lịch sử, văn hóa phục vụ phát triển du
+                                            lịch</h3>
+                                        <i class="fa fa-eye" aria-hidden="true"></i><span>600</span>
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i><span>32</span>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i><span>199</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div id="chude2" class="chude-detail1">
+                                <a href="vanhoa_detail_banhdanem.html">
+                                    <div class="chude-img">
+                                        <img src="img/news_2.jpg">
+                                    </div>
+                                    <div class="overlay">
+                                        <h3>“Bắc Giang – Ngày ấy, bây giờ”</h3>
+                                        <i class="fa fa-eye" aria-hidden="true"></i><span>242</span>
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i><span>24</span>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i><span>1991</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div id="chude5" class="chude-detail1">
+                                <a href="">
+                                    <div class="chude-img">
+                                        <img src="img/news_3.jpg">
+                                    </div>
+                                    <div class="overlay">
+                                        <h3>Bắc Giang thêm hai di tích được Bộ VHTTDL công nhận</h3>
+                                        <i class="fa fa-eye" aria-hidden="true"></i><span>400</span>
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i><span>28</span>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i><span>99</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 course-other">
+                    <div class="course-instructors">
+                        <!--<h4>Xem nhiều nhất</h4>-->
+
+                        <div class="course-1">
+                            <img width="60px" src="img/news1.jpg" alt="">
+                            <a href="news_detail.html" class="course-1-name">
+                                Về với du lịch làng nghề Bắc Giang
+                            </a>
+                            <p>bởi cuhiep trong <a href="news.html"><span>Tin tức</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/news4.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                12 đặc sản danh tiếng của đất Bắc Giang
+                            </a>
+                            <p>bởi Airblade14 trong <a href="#"><span>Tin tức</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/gom.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Top 7 làng nghề nổi tiếng nhất ở Bắc Giang
+                            </a>
+                            <p>bởi sonlazio trong <a href="#"><span>Làng nghề</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/lehoi2.jpg">
+                            <a href="" class="course-1-name">
+                                Làng cổ Thổ Hà - Dấu ấn văn hóa nghìn năm Bắc Bộ
+                            </a>
+                            <p>bởi Non@me trong <a href="#"><span>Làng nghề</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/sp/logom.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Sản phẩm "Du lịch làng nghề Bắc Giang"
+                            </a>
+                            <p>bởi Didu trong <a href="#"><span>Du lịch</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/sp/tuonggom.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Gốm - Tinh hoa từ đôi bàn tay
+                            </a>
+                            <p>bởi Duy Luân trong <a href="#"><span>Tin tức</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/ds/vaithieu.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Ngọt Lịm Vải thiều Lục Ngạn
+                            </a>
+                            <p>bởi cuhiep trong <a href="#"><span>Đặc sản</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/sp/ruou2.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Rượu Vân Hà thơm ngọt mền môi
+                            </a>
+                            <p>bởi sonlazio trong <a href="#"><span>Du lịch</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/sp/banhdake1.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Một nét ẩm thực Bắc Giang Bánh đa Kế - chim rang giềng
+                            </a>
+                            <p>bởi Airblade trong <a href="#"><span>Du lịch</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/news3.jpg" alt="">
+                            <a href="news_detail.html" class="course-1-name">
+                                Phát huy giá trị văn hóa ẩm thực trong dịch vụ du lịch tỉnh Bắc Giang
+                            </a>
+                            <p>bởi Duy Luân trong <a href="#"><span>Tin tức</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/news_4.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Về miền lễ hội Bắc Giang
+                            </a>
+                            <p>bởi Non@me trong <a href="#"><span>Lễ hội</span></a></p>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/news_5.jpg" alt="">
+                            <a href="" class="course-1-name">
+                                Du lịch Hồ Cấm Sơn
+                            </a>
+                            <p>bởi Didu trong <a href="#"><span>Du lịch</span></a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">-->
+                <!--<a href="course-detail.html">-->
+                <!--<div class="content-detail">-->
+                <!--<div class="content-img">-->
+                <!--<img src="img/nhahang2.jpg" class="img-responsive1" alt="Lập trình Web Java Spring"-->
+                <!--title="Lập trình Web Java Spring" style="height: 410px;">-->
+                <!--</div>-->
+                <!--<div class="content-description">-->
+                <!--<h3 class="">Nhà hàng Cây Đa</h3>-->
+                <!--<p><i class="fa fa-map-marker"></i> Address: Số 14 Ngõ 4, Nguyễn Đình Chiểu, Hai Bà-->
+                <!--Trưng,-->
+                <!--Hà Nội-->
+                <!--</p>-->
+                <!--<p><i class="fa fa-mobile"></i> Mobile: 090.220.9011</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</div>-->
+
+            </div>
+
+
+        </div>
+
+</section>
+
+<section class="container-fluid about-us">
+    <div class="row">
+        <div class="container about-wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="wow fadeInUp">
+                        <div class="lien-ket">
+                            <div class="about-title">
+                                <h3>Liên kết</h3>
+                            </div>
+                            <div class="fb-page" data-href="https://www.facebook.com/bacgiangquetoi.com.vn/?fref=ts"
+                                 data-tabs="timeline" data-width="600" data-height="130" data-small-header="false"
+                                 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/bacgiangquetoi.com.vn/?fref=ts"
+                                            class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/bacgiangquetoi.com.vn/?fref=ts">BẮC GIANG QUÊ TÔI</a>
+                                </blockquote>
+                            </div>
+                            <div class="quote">
+                                <ul class="bxslider">
+                                    <li><img src="img/lienket1.jpg"/></li>
+                                    <li><img src="img/lienket2.jpg"/></li>
+                                    <li><img src="img/lienket3.jpg"/></li>
+                                    <li><img src="img/lienket4.jpg"/></li>
+                                    <li><img src="img/lienket5.jpg"/></li>
+                                    <li><img src="img/lienket6.jpg"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="wow fadeInUp">
+                        <div class="video">
+                            <div class="about-title">
+                                <h3>Videos</h3>
+                            </div>
+                            <div class="video-detail">
+                                <div id="video1">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/3J9NBUY7BRE" frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div id="video2">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/8cOBhgOHfSM" frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                                <div id="video3">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/9fzoeFvTV9U" frameborder="0"
+                                            allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="wow fadeInUp">
+                        <div class="adv">
+                            <div class="about-title">
+                                <h3>Bắc giang thân yêu</h3>
+                            </div>
+                            <div class="adv-detail">
+                                <iframe width="100%" height="310" src="https://www.youtube.com/embed/ZURt2WxupTM"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="site-footer-social">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13 clearfix">
+        <div>
+            <ul id="site-footer-social-follow" class="clearfix">
+                <li><a rel="nofollow" href="#" class="social icon-instagram" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-twitter" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-facebook" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-youtube" target="_blank"></a></li>
+                <li><a rel="author" href="#" class="social icon-google" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="site-footer-links">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13">
+        <div class="footList firstFootList">
+            <div class="footList-child">
+                <p>Bắc Giang</p>
+                <ul>
+                    <li><a href="/about">Trang chủ</a></li>
+                    <li><a href="/why-book-with-us">Gới thiệu</a></li>
+                    <li><a href="/our-reviewers">Tin tức</a></li>
+                    <li><a href="/contact">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Làng nghề Bắc Giang</p>
+                <ul>
+                    <li><a href="#">Mây tre đan Tăng Tiến</a></li>
+                    <li><a href="#">Bánh đa nem Thổ Hà</a></li>
+                    <li><a href="#">Bánh đa Kế</a></li>
+                    <li><a href="#">Rượu làng Vân</a></li>
+                    <li><a href="#">Mỳ Chũ</a></li>
+                    <li><a href="#">Gốm làng Ngòi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Top địa điểm</p>
+                <ul>
+                    <li><a href="#">Làng Thổ Hà</a></li>
+                    <li><a href="#">Chùa Vĩnh Nghiêm</a></li>
+                    <li><a href="#">Hồ Cấm Sơn</a></li>
+                    <li><a href="#">Suối Mỡ</a></li>
+                    <li><a href="#">Hồ Khuôn Thần</a></li>
+                    <li><a href="#">Đồng Cao</a></li>
+                    <li><a href="#">Nhà hàng, khách sạn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Đặc sản</p>
+                <ul>
+                    <li><a href="#">Vải thiệu</a></li>
+                    <li><a href="#">Bánh đa</a></li>
+                    <li><a href="#">Cam Bố Hạ</a></li>
+                    <li><a href="#">Gà đồi</a></li>
+                    <li><a href="#">Bún Đa Mai</a></li>
+                    <li><a href="#">Bánh đúc</a></li>
+                    <li><a href="#">Xôi trứng kiến</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footBtm">
+    <p>&copy;
+        <script> document.write(new Date().getFullYear()) </script>
+        BẮC GIANG &ndash; Nơi tinh hoa hội tụ
+    </p>
+    <div id="atol-logo">&nbsp;</div>
+    <div class="digi" data-language="en" id="DigiCertClickID_PQrjblDC">&nbsp;</div>
+</div>
+
+
+<footer class="container-fluid footer">
+    <div class="row footer-wrap">
+        <div class="container-fluid">
+            <div class="col-xs-12 col-sm-8 col-md-5 col-lg-4 col-lg-offset-1">
+                <div class="company">
+                    <h3>Làng nghề Bắc Giang</h3>
+                    <p>Danh mục làng nghề</p>
+                    <p>Thông tin doanh nghiệp</p>
+                    <p>Liên hệ quảng cáo</p>
+                    <p>Bản đồ Bắc Giang</p>
+                </div>
+            </div>
+
+            <div class="hidden-xs col-xs-12 col-sm-4 col-md-push-5 col-md-2 col-lg-2 col-lg-push-4">
+                <div class="ketnoi">
+                    <h3>kết nối</h3>
+                    <div id="ktimg">
+                        <img src="img/fb.png">
+                        <img src="img/gg.png">
+                        <img src="img/twt.png">
+                        <img src="img/int.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-5 col-md-pull-2 col-lg-4 col-md-pull-2">
+                <div class="footer-center">
+                    <h3>Thông tin liên hệ</h3>
+                    <p><i class="fa fa-map-marker"></i> Address: Số 14 Ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng,
+                        Hà Nội
+                    </p>
+                    <p><i class="fa fa-mobile"></i> Mobile: 090.220.9011</p>
+                    <p><i class="fa fa-phone"></i> Phone: (0240) 3.456.789</p>
+                    <p><i class="fa fa-envelope"></i> Email: @bacgiang.gov.vn</p>
+                </div>
+            </div>
+
+            <div class="visible-xs col-sm-4 col-md-2 col-lg-2">
+                <div class="ketnoi">
+                    <h3>kết nối</h3>
+                    <div id="ktimg">
+                        <img src="img/fb.png">
+                        <img src="img/gg.png">
+                        <img src="img/twt.png">
+                        <img src="img/int.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<footer class="container-fluid footer-below">
+    <div class="row">
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                Copyright &copy; Your Website 2017
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<span id="btn-to-top">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</span>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
+

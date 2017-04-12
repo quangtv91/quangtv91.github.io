@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SP Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lobibox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
+    <link rel="stylesheet" type="text/css" href="css/sp_detail_style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<header id="header">
+    <nav class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"><img
+                        src="img/logo1.png" style="width: 160px;" alt="logo"
+                        title="LÀNG NGHỀ BẮC GIANG - Nơi tinh hoa hội tụ"></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+
+                    <li class="dropdown ">
+                        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">Giới thiệu <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about_dialy.html">Vị trí địa lý</a></li>
+                            <li><a href="about_lehoi.html">Văn hóa - Lễ hội</a></li>
+                            <li><a href="about_dulich.html">Tiềm năng du lịch</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="list_sp.html" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="list_sp.html">Làng nghề <i
+                                        class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="sp_detail.html">Bàn ghế mây tre</a></li>
+                                    <li><a href="#">Khung trang trí mây tre</a></li>
+                                    <li><a href="#">Tranh gốm</a></li>
+                                    <li><a href="#">Lọ hoa gốm nghệ thuật</a></li>
+                                    <li><a href="#">Bánh đa Kế</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="">Đặc sản <i class="fa fa-caret-right"></i> </a>
+                                <ul class="dropdown-menu mn3">
+                                    <li><a href="#">Rượu làng Vân</a></li>
+                                    <li><a href="#">Cam Bố Hạ</a></li>
+                                    <li><a href="#">Mỳ Chũ</a></li>
+                                    <!--<li><a href="#">Bánh đa Thổ Hà</a></li>-->
+                                    <li><a href="#">Gà đồi Yên Thế</a></li>
+                                    <li><a href="#">Vải thiều Lục Ngạn</a></li>
+                                    <!--<li><a href="#">Bún Đa Mai</a></li>-->
+                                    <!--<li><a href="#">Chè kho Mỹ Độ</a></li>-->
+                                    <!--<li><a href="#">Xôi trứng kiến</a></li>-->
+                                    <!--<li><a href="#">Cua da</a></li>-->
+                                    <!--<li><a href="#">Bánh đúc Đồng Quan</a></li>-->
+                                    <!--<li><a href="#">Bánh vắt vai</a></li>-->
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="vanhoa.html"
+                           class="dropdown-toggle" data-toggle="dropdown">Văn hóa làng nghề <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_maytredan.html">Mây tre đan Tăng Tiến</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="vanhoa_detail_banhdanem.html">Bánh đa nem Thổ Hà</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Bánh đa Kế</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Mì Chũ</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Rượu Làng Vân</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a class="dropdown-toggle" data-toggle="dropdown"
+                                   href="#">Gốm Làng Ngòi</a>
+                                <ul class="dropdown-menu mn3"></ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="news.html" class="dropdown-toggle" data-toggle="dropdown">Tin tức <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Làng nghề</a></li>
+                            <li><a href="#">Lễ hội</a></li>
+                            <li><a href="#">Du lịch</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown ">
+                        <a href="dichvu.html" class="dropdown-toggle" data-toggle="dropdown">Dịch vụ <i
+                                class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dịch vụ vận tải</a></li>
+                            <!--<li><a href="#">Dịch vụ lữ hành</a></li>-->
+                            <li><a href="#">Nhà hàng, khách sạn</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="search pull-right">
+                    <form role="form" method="post" action="#">
+                        <input name="key_search" required="true" type="search" class="search-form" autocomplete="off"
+                               placeholder="Tìm kiếm">
+                        <button type="submit" class="btn btn-default search-button"><i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+<section id="body"></section>
+
+<section class="container-fluid diachi">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Trang chủ <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="list_sp.html">Sản phẩm <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="list_sp.html">Làng nghề <i class="fa fa-angle-right"></i></a></li>
+            <li class="active-breadcrumb">Bàn ghế mây tre đan</li>
+        </ol>
+    </div>
+</section>
+
+<section class="container-fluid noibat">
+
+    <div class="container mieuta">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="image-product">
+                            <img src="img/sp/banghe.jpg" class="width-img-101">
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pro-des">
+                        <div class="title-product">
+                            <h2>Bộ bàn ghế</h2>
+                            <p>Sản phẩm mây tre đan</p>
+                        </div>
+                        <div class="description-product">
+                            <p>Bàn ghế mây tự nhiên, nội thấy mây, sofa mây. các sản phẩm được tạo ra nhờ những bàn tay
+                                khéo của người Việt đến nay vẫn được sử dụng, chúng tôi vẫn duy trì các sản phẩm nội
+                                thất
+                                mây với thiết kế xưa và thiết kế mới hiện nay… hy vọng các sản phẩm phục vụ mọi nhu cầu
+                                của
+                                khách hàng.
+                                Nhận số lượng không giới hạn nhằm gìn dữ nét truyền thống việt !</p>
+                        </div>
+                        <div class="checkout">
+                            <table class="table rwd-table">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-4">Chủng loại</th>
+                                    <th class="col-xs-4">Đơn Giá</th>
+                                    <th class="col-xs-4">Số Lượng</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Bàn ghế Cafe</td>
+                                    <td>1.000.000 đ</td>
+                                    <td>
+                                        <div class="wan-spinner">
+                                            <a data-idsub="1" href="javascript:void(0)" class="minus" id="minus"
+                                               onclick="minus(this)">-</a>
+                                            <input type="text" class="total-mask" data-price="1000000" data-idsub="1"
+                                                   value="0" style="width: 40px;">
+                                            <a data-idsub="1" href="javascript:void(0)" class="plus" id="plus"
+                                               onclick="plus(this)">+</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bàn ghế phòng ăn</td>
+                                    <td>1.500.000 đ</td>
+                                    <td>
+                                        <div class="wan-spinner">
+                                            <a data-idsub="2" href="javascript:void(0)" class="minus" id="minus"
+                                               onclick="minus(this)">-</a>
+                                            <input type="text" class="total-mask" data-price="1500000" data-idsub="2"
+                                                   value="0" style="width: 40px;">
+                                            <a href="javascript:void(0)" class="plus" id="plus" onclick="plus(this)"
+                                               data-idsub="2">+</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bàn ghế phòng khách</td>
+                                    <td>2.500.000 đ</td>
+                                    <td>
+                                        <div class="wan-spinner">
+                                            <a data-idsub="3" href="javascript:void(0)" class="minus" id="minus"
+                                               onclick="minus(this)">-</a>
+                                            <input type="text" class="total-mask" data-price="2500000" data-idsub="3"
+                                                   value="0" style="width: 40px;">
+                                            <a data-idsub="3" href="javascript:void(0)" class="plus" id="plus"
+                                               onclick="plus(this)">+</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="product-addcart">
+                            <div class="col-xs-12 money">
+                                <b>Tổng tiền: </b>
+                                <b class="money-total" id="total-money">0</b>
+                                <span>đ</span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 shopnow">
+                                <a href="giohang.html" title="Mua hàng"
+                                   class="btn btn-lg background-red color-white text-uppercase pull-right"
+                                   data-modulenameascii="mo" data-link="/gui-don-hang" id="add-to-cart-to-payment">Mua
+                                    hàng</a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 product-cart">
+                                <a href="javascript:void(0)" onclick="addCart()" title="Thêm vào giỏ hàng"
+                                   class="btn btn-lg color-white text-uppercase pull-right" data-modulenameascii="mo"
+                                   id="add-to-cart"><i class="glyphicon glyphicon-shopping-cart"></i>Thêm vào giỏ
+                                    hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="row">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab"
+                                                                      data-toggle="tab">Thông
+                                tin sản phẩm</a>
+                            </li>
+                            <li role="presentation"><a href="#home" aria-controls="home" role="tab"
+                                                       data-toggle="tab">Người dùng đánh giá</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                       data-toggle="tab">Liên
+                                hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane " id="home">
+                            <h3 style="color: #8b0304; font-size: 24px;">Đánh giá của bạn</h3>
+                            <div style="margin-bottom: 20px;" class="my-rating"></div>
+                            <textarea style="resize: none;" class="form-control" rows="10"
+                                      placeholder="Nội dung đánh giá"></textarea>
+                            <a href="" style="float: right;margin-top: 20px; display: block">
+                                <button type="button" class="btn btn-primary">Gửi đánh giá</button>
+                            </a>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane active" id="profile">
+                            <div class="container-fluid thongtin">
+                                <!--<div class="row">-->
+                                <h3>Ngắm nhìn những bộ bàn ghế với chất liệu mây tre đan quen thuộc nhưng đẹp đến bất
+                                    ngờ</h3>
+                                <!--<div class="title">-->
+                                <!--<img src="img/logo.png">-->
+                                <!--</div>-->
+                                <div style="text-align: center">
+                                    <p>Những món đồ thủ công làm từ mây tre đan đã không lạ lẫm với mỗi người dân Việt
+                                        Nam.
+                                        Song, lựa chọn chất liệu này làm đồ nội thất trong gia đình thì chưa thật sự phổ
+                                        biến.
+                                        Những món đồ mây tre đan thường được dùng như đồ trang trí, phụ kiện trong gia
+                                        đình.</p>
+                                    <p>Song trong vài năm trở lại đây, khi xu hướng nội thất truyền thống lên ngôi, xu
+                                        hướng
+                                        nội thất thân thiện, gân gũi thiên nhiên được nhiều gia đình lựa chọn thì đã có
+                                        nhiều
+                                        gia đình lựa chọn cho mình những <strong>bàn ghế bằng mây tre đan</strong> vô
+                                        cùng
+                                        bắt
+                                        mắt. Không chỉmang vẻ đẹp mộc mạc, giản dị, những bộ bàn ghế này còn góp phần
+                                        không
+                                        nhỏ
+                                        trong việc điều hòa không gian sống, mang lại cảm giác thoải mái dễ chịu vô
+                                        cùng.
+                                    </p>
+
+                                    <img src="img/sp/banghe3.jpg" class="width-img-100">
+                                    <h5 class="index">Những bộ bàn ghế phòng khách được làm từ chất liệu tre đang được
+                                        nhiều
+                                        gia
+                                        đình lựa chọn.</h5>
+
+                                    <img src="img/sp/banghe4.jpg" class="width-img-100">
+                                    <h5 class="index">Không gian gia đình thiết kế đậm chất Á Đông kết hợp vô cùng ăn ý
+                                        với
+                                        những bộ bàn ghế phòng khách như thế này.</h5>
+
+                                    <img src="img/sp/banghe5.jpg" class="width-img-100">
+                                    <h5 class="index">Không chỉ mang đến sự thân thiện, gần gũi với người dùng, chất
+                                        liệu tự
+                                        nhiên này còn có công dụng giúp người dùng xóa tan mọi căng thẳng, mệt mỏi.</h5>
+
+                                    <img src="img/sp/banghe6.jpg" class="width-img-100">
+                                    <h5 class="index">Những bộ bàn ghế sofa bằng chất liệu mây cũng được ra đời để đáp
+                                        ứng
+                                        nhu
+                                        cầu của người dùng.</h5>
+
+                                    <p>Nhìn chung, những bộ bàn ghế mây tre đan đều có mức giá thành phải chăng và thấp
+                                        hơn
+                                        nhiều so với những bộ bàn ghế gỗ, sofa hiện đại.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <h3>Thông tin liên hệ</h3>
+                            <p><i class="fa fa-map-marker"></i> Address: Số 14 Ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng,
+                                Hà Nội
+                            </p>
+                            <p><i class="fa fa-mobile"></i> Mobile: 090.220.9011</p>
+                            <p><i class="fa fa-phone"></i> Phone: (0240) 3.456.789</p>
+                            <p><i class="fa fa-envelope"></i> Email: @bacgiang.gov.vn</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                    <div class="other-product">
+                        <div class="lienquan">
+                            <h3 style="text-align: center; margin-bottom: 20px;color: #8b0304; font-size: 24px; text-transform: uppercase">
+                                Sản phẩm tương tự</h3>
+                        </div>
+
+
+                    <div class="other-product-detail">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 special">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/sp/banghe1.jpg">
+                                        <div class="image-overlay">
+                                            <a href=""><span>Xem Chi Tiết</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <a href="">
+                                            <h3>Bộ bàn ghế</h3>
+                                        </a>
+                                        <p>Sản phầm mây tre đan</p>
+                                        <span><a href="#"></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 special">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/sp/ghe.jpg">
+                                        <div class="image-overlay">
+                                            <a href=""><span>Xem Chi Tiết</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <a href="">
+                                            <h3>Ghế</h3>
+                                        </a>
+                                        <p>Sản phẩm mây tre đan</p>
+                                        <span><a href="#"></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 special">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/sp/trangtri3.png">
+                                        <div class="image-overlay">
+                                            <a href=""><span>Xem Chi Tiết</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <a href="">
+                                            <h3>Khung trang trí</h3>
+                                        </a>
+                                        <p>Sản phẩm mây tre đan</p>
+                                        <span><a href="#"></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 special">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="img/sp/den3.jpg">
+                                        <div class="image-overlay">
+                                            <a href=""><span>Xem Chi Tiết</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <a href="">
+                                            <h3>Đèn trang trí</h3>
+                                        </a>
+                                        <p>Sản phẩm mây tre đan</p>
+                                        <span><a href="#"></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<div id="site-footer-social">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13 clearfix">
+        <div>
+            <ul id="site-footer-social-follow" class="clearfix">
+                <li><a rel="nofollow" href="#" class="social icon-instagram" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-twitter" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-facebook" target="_blank"></a></li>
+                <li><a rel="nofollow" href="#" class="social icon-youtube" target="_blank"></a></li>
+                <li><a rel="author" href="#" class="social icon-google" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="site-footer-links">
+    <div class="wrapper S-4_4 M-12_12 L-11_12 XL-12_13 XXL-12_13">
+        <div class="footList firstFootList">
+            <div class="footList-child">
+                <p>Bắc Giang</p>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Gới thiệu</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Làng nghề Bắc Giang</p>
+                <ul>
+                    <li><a href="#">Mây tre đan Tăng Tiến</a></li>
+                    <li><a href="#">Bánh đa nem Thổ Hà</a></li>
+                    <li><a href="#">Bánh đa Kế</a></li>
+                    <li><a href="#">Rượu làng Vân</a></li>
+                    <li><a href="#">Mỳ Chũ</a></li>
+                    <li><a href="#">Gốm làng Ngòi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Top địa điểm</p>
+                <ul>
+                    <li><a href="#">Làng Thổ Hà</a></li>
+                    <li><a href="#">Chùa Vĩnh Nghiêm</a></li>
+                    <li><a href="#">Hồ Cấm Sơn</a></li>
+                    <li><a href="#">Suối Mỡ</a></li>
+                    <li><a href="#">Hồ Khuôn Thần</a></li>
+                    <li><a href="#">Đồng Cao</a></li>
+                    <li><a href="#">Nhà hàng, khách sạn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footList">
+            <div class="footList-child">
+                <p>Đặc sản</p>
+                <ul>
+                    <li><a href="#">Vải thiệu</a></li>
+                    <li><a href="#">Bánh đa</a></li>
+                    <li><a href="#">Cam Bố Hạ</a></li>
+                    <li><a href="#">Gà đồi</a></li>
+                    <li><a href="#">Bún Đa Mai</a></li>
+                    <li><a href="#">Bánh đúc</a></li>
+                    <li><a href="#">Xôi trứng kiến</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footBtm">
+    <p>&copy;
+        <script> document.write(new Date().getFullYear()) </script>
+        Techmaster Vietnam &ndash; All rights reserved.
+    </p>
+    <div id="atol-logo">&nbsp;</div>
+    <div class="digi" data-language="en" id="DigiCertClickID_PQrjblDC">&nbsp;</div>
+</div>
+
+<span id="btn-to-top">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</span>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/lobibox.min.js"></script>
+<script src="js/jquery.star-rating-svg.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cout.js"></script>
+
+
+</body>
+</html>
+
