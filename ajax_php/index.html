@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GemPage_Popup | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,500,400i,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+    <!-- web push -->
+    <!-- link rel="manifest" href="manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "ca923276-9696-4f91-bbe2-5699febb9348",
+            autoRegister: false,
+            notifyButton: {
+                enable: true /* Set to false to hide */
+            }
+        }]);
+    </script -->
+
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <meta name="csrf-param" content="authenticity_token"/>
+    <meta name="csrf-token"
+          content="nytpUFpk7kGrQJjI+qVaJsnp2yjdkGRBsbPxSCdkOHhwpwTy4u4AiqXx52UYlVALvHyI/4YnynHcKieJVqPUWA=="/>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link type="image/x-icon" rel="shortcut icon" href="img/logo.png">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->f
+</head>
+
+<body class="backend-page">
+<section class="header-section">
+    <div class="site-header">
+        <ul class="breadcrumb">
+            <li>
+                <a class="" href="/dashboard">Dashboard</a>
+            </li>
+
+            <li>
+                <a class="" href="/install">My Shops</a>
+            </li>
+
+            <li>
+                <a class="current" href="//gempage.myshopify.com">gempage.myshopify.com</a>
+            </li>
+            <li>
+                <a class="" data-method="get" href="/dashboard/shop/upgrade-plan">
+                    Change Plan
+                </a></li>
+
+
+        </ul>
+
+        <ul class="navbar-right">
+            <li class="menu-item dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="shop-domain">getshoplaunch@gmail.com</span>
+                    <img src="https://www.gravatar.com/avatar/?d=mm" alt=""/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="" href="/users/edit">
+                            <img src="https://www.gravatar.com/avatar/?d=mm" alt="Seal Commerce"/>
+                            <div class="user-info">
+                                <strong>Seal Commerce</strong><br>
+                                <span class="u-email">getshoplaunch@gmail.com</span><br/>
+                            </div>
+                        </a></li>
+
+
+                    <li>
+                        <svg fill="#BCB5B9" height="24" viewBox="0 0 24 24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/>
+                        </svg>
+                        <a class="" href="/dashboard/users/shops">
+                            My Shops
+                        </a></li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#BCB5B9" fill-rule="evenodd" d="M12 12h6v6h-6zM6 2h6v16H6zM0 8h6v10H0z"/>
+                        </svg>
+                        <a class="" href="/users/edit">
+                            My Account
+                        </a></li>
+                    <li>
+                        <svg fill="#BCB5B9" height="18" viewBox="0 0 24 24" width="18"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/>
+                        </svg>
+                        <a rel="nofollow" data-method="delete" href="/users/sign_out">Sign out</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section><!-- end .header-section -->
+
+<main id="main-content">
+
+    <div class="admin-body">
+        <div class="admin-sidebar">
+            <div class="main-logo">
+                <a class="logo" href="/dashboard">
+                    <img class="" alt="GemPage" src="img/logo.png"/> <span>GemPage</span>
+                </a>
+                <a class="frontend" href="/">
+                    <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                    </svg>
+                </a></div>
+
+            <ul class="menu main-menu">
+
+                <li class="plan">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#EEBB2D" fill-rule="evenodd" d="M12 12h6v6h-6zM6 2h6v16H6zM0 8h6v10H0z"/>
+                        </svg>
+                        <span>Professional</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a class="" href="/dashboard/shop/content-pages">
+                        <span>Content Pages</span>
+                    </a></li>
+
+                <li>
+                    <a class="" href="/dashboard/shop/home-pages">
+                        <span>Home Pages</span>
+                    </a></li>
+
+                <li>
+                    <a class="" href="#">
+                        <span>Sales Funnels <span class="soon">(soon)</span></span>
+                    </a></li>
+            </ul>
+            <ul class="menu menu-footer">
+                <li>
+                    <a href="https://gempage.helpscoutdocs.com" target="_blank">
+                        <svg width="24px" height="24px" viewBox="45 28 24 24" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="ic_help_black_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                               transform="translate(45.000000, 28.000000)">
+                                <g id="Group">
+                                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                    <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 L12,2 Z M13,19 L11,19 L11,17 L13,17 L13,19 L13,19 Z M15.07,11.25 L14.17,12.17 C13.45,12.9 13,13.5 13,15 L11,15 L11,14.5 C11,13.4 11.45,12.4 12.17,11.67 L13.41,10.41 C13.78,10.05 14,9.55 14,9 C14,7.9 13.1,7 12,7 C10.9,7 10,7.9 10,9 L8,9 C8,6.79 9.79,5 12,5 C14.21,5 16,6.79 16,9 C16,9.88 15.64,10.68 15.07,11.25 L15.07,11.25 Z"
+                                          id="Shape" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        Documentation
+                    </a>
+                </li>
+                <li>
+                    <a href="https://apps.shopify.com/gempage" target="_blank">
+                        <svg width="24px" height="24px" viewBox="45 28 24 24" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="ic_help_black_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                               transform="translate(45.000000, 28.000000)">
+                                <g id="Group">
+                                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                    <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 L12,2 Z M13,19 L11,19 L11,17 L13,17 L13,19 L13,19 Z M15.07,11.25 L14.17,12.17 C13.45,12.9 13,13.5 13,15 L11,15 L11,14.5 C11,13.4 11.45,12.4 12.17,11.67 L13.41,10.41 C13.78,10.05 14,9.55 14,9 C14,7.9 13.1,7 12,7 C10.9,7 10,7.9 10,9 L8,9 C8,6.79 9.79,5 12,5 C14.21,5 16,6.79 16,9 C16,9.88 15.64,10.68 15.07,11.25 L15.07,11.25 Z"
+                                          id="Shape" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        GemPage App
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="content-wrap">
+
+            <div class="container">
+                <div class="row">
+                    <div class="notify col-sm-12">
+
+
+                    </div>
+                    <div class="col-sm-12 all-pages-listing">
+                        <div class="item active">
+                            <div class="data-listing">
+                                <div class="search-box margin-bottom">
+                                    <form>
+                                        <div class="search-form">
+                                            <svg width="24px" height="24px" viewBox="911 485 24 24" version="1.1"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="ic_search_black_24px-(2)" stroke="none" stroke-width="1"
+                                                   fill="none" fill-rule="evenodd"
+                                                   transform="translate(923.000000, 497.000000) scale(-1, 1) translate(-923.000000, -497.000000) translate(911.000000, 485.000000)">
+                                                    <g id="Group">
+                                                        <path d="M15.5,14 L14.71,14 L14.43,13.73 C15.41,12.59 16,11.11 16,9.5 C16,5.91 13.09,3 9.5,3 C5.91,3 3,5.91 3,9.5 C3,13.09 5.91,16 9.5,16 C11.11,16 12.59,15.41 13.73,14.43 L14,14.71 L14,15.5 L19,20.49 L20.49,19 L15.5,14 L15.5,14 Z M9.5,14 C7.01,14 5,11.99 5,9.5 C5,7.01 7.01,5 9.5,5 C11.99,5 14,7.01 14,9.5 C14,11.99 11.99,14 9.5,14 L9.5,14 Z"
+                                                              id="Shape" fill="#B7B7B7"></path>
+                                                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <input type="text" class="form-control"
+                                                   placeholder="Search content pages..." id="search-query-3">
+                                        </div>
+                                    </form>
+                                    <a href="#" class="btn-round red button-add-more">
+                                        <span><span>+</span></span>
+                                    </a>
+                                </div>
+
+                                <div class="pages">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256193668&amp;page=new-page-1&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">New page 1</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T21:54:04-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256193668"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256193668"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256193668"
+                                                       data-pType="template-page" data-pTitle="New page 1"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/new-page-1" title="View Page"
+                                                       target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256193668&amp;page=new-page-1&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256181252&amp;page=test-3333&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">test 3333</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T16:09:47-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256181252"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256181252"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256181252"
+                                                       data-pType="template-page" data-pTitle="test 3333"
+                                                       data-pLayout="blank">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/test-3333" title="View Page"
+                                                       target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256181252&amp;page=test-3333&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256181188&amp;page=test-1&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">test</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T16:08:38-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256181188"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256181188"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256181188"
+                                                       data-pType="template-page" data-pTitle="test"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/test-1" title="View Page"
+                                                       target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256181188&amp;page=test-1&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256165508&amp;page=test-mailchimp&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">Test mailchimp</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T08:24:11-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256165508"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256165508"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256165508"
+                                                       data-pType="template-page" data-pTitle="Test mailchimp"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/test-mailchimp"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256165508&amp;page=test-mailchimp&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256164164&amp;page=my-product-slider&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">My Product Slider</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T07:15:17-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256164164"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256164164"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256164164"
+                                                       data-pType="template-page" data-pTitle="My Product Slider"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/my-product-slider"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256164164&amp;page=my-product-slider&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256163844&amp;page=this-is-just-a-test&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">This Is Just A Test</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-25T07:05:06-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256163844"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256163844"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256163844"
+                                                       data-pType="template-page" data-pTitle="This Is Just A Test"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/this-is-just-a-test"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256163844&amp;page=this-is-just-a-test&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256129988&amp;page=test-new-update&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">Test New Update</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-24T12:02:28-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256129988"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256129988"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256129988"
+                                                       data-pType="template-page" data-pTitle="Test New Update"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/test-new-update"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256129988&amp;page=test-new-update&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256109892&amp;page=chris-test-new-page&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">Chris Test new Page</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-23T22:47:26-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256109892"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+                                                </a>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256109892"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256109892"
+                                                       data-pType="template-page" data-pTitle="Chris Test new Page"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/chris-test-new-page"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256109892&amp;page=chris-test-new-page&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=256109764&amp;page=chris-test-page&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">Chris Test Page</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-23T22:43:43-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="256109764"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256109764"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="256109764"
+                                                       data-pType="template-page" data-pTitle="Chris Test Page"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/chris-test-page"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=256109764&amp;page=chris-test-page&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="edit-page" data-method="get"
+                                               href="/editor?id=255224644&amp;page=chris-test-page-10001&amp;shop=gempage.myshopify.com&amp;type=template-page">
+									            <span class="page-title">
+									            	<span class="title-text">Chris Test Page 10001</span>
+									            </span>
+                                                <span class="page-description">
+									            	Last updated: 2017-04-20T06:24:01-04:00
+									            </span>
+                                            </a>
+                                            <div class="editor-tool">
+                                                <a href="#" title="Delete Page" class="delete-page"
+                                                   data-shop="gempage.myshopify.com" data-pid="255224644"
+                                                   data-pType="template-page">
+                                                    <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                         height="20" viewBox="0 0 48 48">
+                                                        <path d="M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z"/>
+                                                    </svg>
+                                                    <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </path>
+
+                                                    <!-- <a href="#" class="analytic">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM18 34h-4V20h4v14zm8 0h-4V14h4v20zm8 0h-4v-8h4v8z"/></svg>
+                                                    </a> -->
+
+                                                    <a href="#" title="Clone Page" class="clone-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="255224644"
+                                                       data-pType="template-page">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                                                        </svg>Clone Page
+                                                        <img class="" alt="" src="img/ajax-loader.gif"/>
+                                                    </a>
+
+                                                    <a href="#" title="Page Settings" class="settings-page"
+                                                       data-shop="gempage.myshopify.com" data-pid="255224644"
+                                                       data-pType="template-page" data-pTitle="Chris Test Page 10001"
+                                                       data-pLayout="default">
+                                                        <svg fill="#b7b7b7" height="20" viewBox="0 0 24 24" width="20"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="//gempage.myshopify.com/pages/chris-test-page-10001"
+                                                       title="View Page" target="_blank" class="preview-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                                             width="20" height="20" viewBox="0 0 24 24">
+                                                            <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
+                                                        </svg>
+                                                    </a>
+
+                                                    <a target="_blank" class="edit-page" data-method="get"
+                                                       href="/editor?id=255224644&amp;page=chris-test-page-10001&amp;shop=gempage.myshopify.com&amp;type=template-page">
+                                                        <svg fill="#b7b7b7" xmlns="http://www.w3.org/2000/svg"
+                                                             width="20" height="20" viewBox="0 0 48 48">
+                                                            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                                                        </svg>
+                                                    </a></div>
+                                        </li>
+                                        <li class="empty">
+                                            <h3 class="text-center">You haven't created any new pages yet.</h3>
+                                            <small class="text-center">Create a new page by pressing the pink button in
+                                                the top right conner.
+                                            </small>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Pagination -->
+                                <div id="pagination">
+                                    <ul>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item active"><a class=""
+                                                                        href="/dashboard/shop/content-pages?page=1">1</a>
+                                        </li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=2">2</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=3">3</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=4">4</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=5">5</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <li class="disabled"><a href="#">...</a></li>
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=7">7</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=8">8</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class=""
+                                                                  href="/dashboard/shop/content-pages?page=9">9</a></li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class="" href="/dashboard/shop/content-pages?page=10">10</a>
+                                        </li>
+                                        <!-- Hide middle number in pagination -->
+                                        <!-- Append a ... to nearly end -->
+                                        <!-- End hiding -->
+                                        <li class="page-item "><a class="" href="/dashboard/shop/content-pages?page=11">11</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End -->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="admin-footer">
+            <p>&copy; 2017 GemPage. All rights reserved.</a></p>
+        </footer>
+    </div>
+</main>
+
+<div style="display: none;">
+    <div id="video-player">
+        <script src="//fast.wistia.com/embed/medias/isx6hhj8ga.jsonp" async></script>
+        <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:50.1% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_isx6hhj8ga videoFoam=true" style="height:100%;width:100%">
+                    &nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script src="js/script.js" data-turbolinks-track="reload"></script>
+
+<script>
+    window.intercomSettings = {
+        app_id: "z11bwnw3",
+        name: "Seal Commerce", // Full name
+        email: "getshoplaunch@gmail.com", // Email address
+        created_at: 1312182000 // Signup date as a Unix timestamp
+    };
+</script>
+
+<script>(function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+        ic('reattach_activator');
+        ic('update', intercomSettings);
+    } else {
+        var d = document;
+        var i = function () {
+            i.c(arguments)
+        };
+        i.q = [];
+        i.c = function (args) {
+            gf
+            i.q.push(args)
+        };
+        w.Intercom = i;
+        function l() {
+            var s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://widget.intercom.io/widget/z11bwnw3';
+            var x = d.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+
+        if (w.attachEvent) {
+            w.attachEvent('onload', l);
+        } else {
+            w.addEventListener('load', l, false);
+        }
+    }
+})()</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-84090430-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<script src="https://static.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
+
+<script type="text/javascript">
+    function getQueryParams() {
+        var assoc = {};
+        var decode = function (s) {
+            return decodeURIComponent(s.replace(/\+/g, " "));
+        };
+        var queryString = location.search.substring(1);
+        var keyValues = queryString.split('&');
+
+        for (var i in keyValues) {
+            var key = keyValues[i].toString().split('=');
+            if (key.length > 1) {
+                assoc[decode(key[0])] = decode(key[1]);
+            }
+        }
+
+        return assoc;
+    }
+    ;
+
+    window['TapfiliateObject'] = i = 'tap';
+    window[i] = window[i] || function () {
+            (window[i].q = window[i].q || []).push(arguments);
+        };
+
+    var params = getQueryParams();
+
+    tap('create', '3601-bf1f32');
+
+    if (params.st == 'Completed') {
+        var amt = params.amt || 1;
+        var tx = params.tx || null;
+        tap('conversion', tx, amt);
+    } else {
+        tap('detectClick');
+    }
+</script>
+
+<div class="my_popup">
+
+    <div class="new-page-popup" id="new-page-form">
+        <div class="data-listing">
+            <div class="search-box margin-bottom">
+                <a href="#" class="back-to-main-page">
+                    <svg fill="#fff" height="20" viewBox="0 0 24 24" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+                    </svg>
+                    Back to content pages
+                </a>
+            </div>
+            <div class="new-content-pages pages">
+                <br/>
+                <h4 id="add">Add New Content Page</h4>
+                <br/>
+                <form action="/" method="POST">
+                    <input type="text" name="pageTitle" class="page-title-input pageTitle"
+                           placeholder="Enter page title">
+                    <input type="hidden" name="pageType" class="pageType"
+                           value="template-page"/>
+                    <input type="hidden" name="shop" class="shop"
+                           value="gempage.myshopify.com"/>
+                    <br/>
+                    <br/>
+                    <label class="layout-none">
+                        <input type="checkbox" name="pageLayout" class="pageLayout"/>
+                        <svg fill="#000000" height="20" viewBox="0 0 24 24" width="20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Blank page (without header + footer)
+                    </label>
+                    <br/>
+                    <br/>
+                    <div class="action-button">
+                        <!-- <input type="submit" name="" class="btn add-new-page add-new-edit-page" value="Add & Edit"> -->
+                        <input type="submit" name="" class="quangtv-add-new"
+                               value="Add New">
+                        <span>or</span>
+                        <a href="#" class="back-to-main-page">Cancel</a>
+                    </div>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div><!-- end #new-page-popup -->
+</div>
+
+</body>
+</html>
